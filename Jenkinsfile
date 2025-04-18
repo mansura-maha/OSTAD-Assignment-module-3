@@ -1,10 +1,10 @@
-pipeline {
+pipeline { 
     agent any
 
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/mansura-maha/OSTAD-Assignment-module-3.git'
+                git branch: 'main', url: 'https://github.com/mansura-maha/OSTAD-Assignment-module-3.git'
             }
         }
 
@@ -30,3 +30,4 @@ pipeline {
         }
     }
 }
+
